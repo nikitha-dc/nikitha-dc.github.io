@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; line-height: 1.6; }
+    header { max-width: 720px; margin: auto; }
+    nav a { margin-right: 1rem; text-decoration: none; }
+    main { max-width: 720px; margin: 2rem auto; }
+    footer { max-width: 720px; margin: 3rem auto; font-size: .9rem; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello, I’m Your Name 👋</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <p>Welcome to my GitHub Pages site!</p>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Cool thing I built</li>
+        <li>Another cool thing</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at you@example.com</p>
+    </section>
+  </main>
+  <footer>© <span id="y"></span> Your Name</footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
