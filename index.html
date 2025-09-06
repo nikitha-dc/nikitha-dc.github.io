@@ -40,7 +40,18 @@
         line-height: 1.7;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+
+        display: flex;              
+        flex-direction: column;     
+        min-height: 100vh;         
       }
+
+      main {
+        flex: 1;                    /* fills space below header */
+        display: flex;
+        align-items: center;        /* vertical center */
+        justify-content: center;    /* horizontal center */
+      }  
 
       /* Layout */
       .wrap {
